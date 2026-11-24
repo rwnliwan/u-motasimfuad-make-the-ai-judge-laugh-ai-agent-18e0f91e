@@ -14,3 +14,8 @@
 
 ## Status
 Built and verified locally; bundle + check results to be recorded below after the first bundle/check run.
+
+## Fix-and-resubmit (25 Nov 2026, ~02:30 WITA)
+- Bundle v1 (sha256 `07d94151…`, 809.263 B) carried **0 usage rows** — its manifest warns "this entry will be rejected where transcripts are required". Local check was 13/1 (only `thinking_priced` failed). The five round-26 submit attempts (24 Nov) never produced a kept entry (`entries_made` 5, `entries_kept` 0, verified via `status --competition`); the account banner on 25 Nov 02:12 WITA asked to fix the entry and resubmit by 25 Nov 04:30 WITA.
+- Fix: re-bundle the same builder session (`fb00f8e0-4294-4fcb-a08d-e84bd51ebd97`) with `--muse-usage muse-usage-3.jsonl` (1 usage row: 6.796.580 input / 40.719 output tokens) using the fresh level-44 kit, then re-check. GitHub About also completed in the same round (topics `makefun` + `ai-agents` + `bounties`, description set, homepage already set).
+- Bundle v2 + re-check result recorded below after the run.
